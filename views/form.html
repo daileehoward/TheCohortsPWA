@@ -67,8 +67,8 @@
                     <div class="body">
                         <form class="form-horizontal col-sm-12">
                             <div class="form-check" style="padding-left: 2%">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Currently Without Residence</label>
+                                <input type="checkbox" class="form-check-input" id="noResidence" name="noResidence" value="noResidence">
+                                <label class="form-check-label" for="noResidence">Currently Without Residence</label>
                             </div>
 
                             <div class="form-group">
@@ -84,6 +84,11 @@
                                        placeholder="Your last name" data-placement="top"
                                        data-trigger="manual" data-content="Must be your legal last name"
                                        type="text"></div>
+
+                            <div class="form-group" id="addressField">
+                                <label for="address">Address</label>
+                                <input class="form-control" id="address" name="address" placeholder="123 Alphabet Rd.">
+                            </div>
 
                             <div class="form-group">
                                 <label>E-Mail</label>

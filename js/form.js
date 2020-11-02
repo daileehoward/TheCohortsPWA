@@ -32,6 +32,9 @@ function validateZip()
 
 }
 
+let noResidence = document.getElementById('noResidence');
+noResidence.addEventListener("click", validateCheckbox);
+
 let utilitiesBill = document.getElementById("bills");
 utilitiesBill.addEventListener("click", validateCheckbox);
 
@@ -46,6 +49,18 @@ gas.addEventListener("click", validateCheckbox);
 
 function validateCheckbox()
 {
+    let noResidenceCheck = document.querySelector("#noResidence");
+    let addressField = document.getElementById('addressField');
+
+    if (noResidenceCheck.checked)
+    {
+        addressField.className = 'noDisplay';
+    }
+    else
+    {
+        addressField.className = 'doDisplay';
+    }
+
     let billsCheck = document.querySelector("#bills");
 
     if(billsCheck.checked)

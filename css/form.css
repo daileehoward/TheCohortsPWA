@@ -11,3 +11,11 @@
     font-weight: bold;
 }
 
+.noDisplay {
+    visibility: hidden;
+}
+
+.doDisplay {
+    visibility: visible
+}
+
